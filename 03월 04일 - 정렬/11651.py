@@ -1,11 +1,9 @@
 #백준 11651번
 #좌표 정렬하기 2
 
-coord = [] #좌표를 저장할 리스트
+import sys
 
-for _ in range(int(input())):
-    x, y = map(int, input().split())
-    coord.append((x, y)) #입력받은 좌표값을 튜플 형식으로 리스트에 저장
+coord = [tuple(map(int, sys.stdin.readline().split())) for _ in range(int(sys.stdin.readline()))]
 
 coord.sort(key=lambda z : (z[1], z[0]))
 # key : 정렬 기준

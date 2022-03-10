@@ -6,8 +6,7 @@ card = [i for i in range(1, 21)] #1번부터 20번까지 카드 리스트에 저
 
 for _ in range(N):
     a, b = map(int, input().split())
-    temp = card[a-1:b] #역배치 할 영역의 카드 번호 받아오기
-    card[a-1:b] = temp[::-1] #역배치 후 기존 카드 리스트에 넣기
+    card[a-1:b] = reversed(card[a-1:b])
 
 for i in card:
     print(i, end=' ') #' '로 출력 값들 이어주기
