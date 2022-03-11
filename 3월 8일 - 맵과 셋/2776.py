@@ -13,8 +13,8 @@ for _ in range(T):
     M = int(input())
     b_list = list(map(int, input().split()))
 
-    for i in b_list:
-        if i in a_list:
+    for i in b_list:        #b_list에 있는 값이
+        if i in a_list:     #a_list에도 있다면
             print(1)
         else:
             print(0)
