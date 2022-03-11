@@ -9,8 +9,8 @@ for i in range(n):
 
     if extension in dic:        #확장자가 dic에 있으면
         dic[extension] += 1     #value값 1 추가 (나온 횟수)
-    else:                       #없으면
-        dic[extension] = 1      #확장자의 value = 1
+    else:                       
+        dic[extension] = 1      
 
 for key, value in sorted(dic.items()):      #사전 순 정렬
     print(key, value)
