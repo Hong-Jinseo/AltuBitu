@@ -3,9 +3,15 @@
 
 n = list(input())
 n.sort(reverse=True)
-num = "".join(n)
 
-if int(num)%30 != 0:
-    print(-1)
+total = 0
+
+if '0' in n:
+    for i in n:
+        total += int(i)
+    if total % 3 == 0:
+        print("".join(n))
+    else:
+        print(-1)
 else:
-    print(num)
+    print(-1)
