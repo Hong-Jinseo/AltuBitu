@@ -12,6 +12,4 @@ arr = list(set(itertools.permutations(num, m)))
 arr.sort()
 
 for a in arr:
-    for i in range(m-1):
-        print(a[i], end=' ')
-    print(a[m-1])
+    print(*a)

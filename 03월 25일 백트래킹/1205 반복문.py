@@ -21,4 +21,3 @@ if n>0:
         print(i+1)
 else:
     print(1)
-    exit()
